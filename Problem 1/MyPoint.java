@@ -2,17 +2,17 @@ public class MyPoint {
     private int x;
     private int y;
 
-    public MyPoint() {
+    public MyPoint() { // Default constructor sets point at (0,0)
         this.x = 0;
         this.y = 0;
     }
 
-    public MyPoint(int x, int y) {
+    public MyPoint(int x, int y) {  // Constructor that sets point to given x and y
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public int getX() { 
         return x;
     }
 
@@ -28,7 +28,7 @@ public class MyPoint {
         this.y = y;
     }
 
-    public int[] getXY() {
+    public int[] getXY() { // Returns both coordinates as an array
         return new int[] { x, y };
     }
 

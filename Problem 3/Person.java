@@ -3,7 +3,7 @@ public class Person {
     private String lastName;
     private Address address;
 
-    public Person(String firstName, String lastName, Address address) {
+    public Person(String firstName, String lastName, Address address) { // Constructor to create a person with a name and address
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;

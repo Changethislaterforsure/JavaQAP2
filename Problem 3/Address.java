@@ -4,14 +4,14 @@ public class Address {
     private String state;
     private String zip;
 
-    public Address(String street, String city, String state, String zip) {
+    public Address(String street, String city, String state, String zip) { // Constructor to set all address fields
         this.street = street;
         this.city = city;
         this.state = state;
         this.zip = zip;
     }
 
-    public String getStreet() {
+    public String getStreet() { // Getter methods
         return street;
     }
 

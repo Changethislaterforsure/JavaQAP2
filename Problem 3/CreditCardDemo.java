@@ -1,6 +1,6 @@
 public class CreditCardDemo {
     public static void main(String[] args) {
-        final Money LIMIT = new Money(1000, 0);
+        final Money LIMIT = new Money(1000, 0); // Define money values used in demo
         final Money FIRST_AMOUNT = new Money(200, 0);
         final Money SECOND_AMOUNT = new Money(10, 2);
         final Money THIRD_AMOUNT = new Money(25, 0);
@@ -16,7 +16,7 @@ public class CreditCardDemo {
         System.out.println("Credit Limit: " + visa.getCreditLimit());
         System.out.println();
 
-        System.out.println("Attempt to charge " + FIRST_AMOUNT);
+        System.out.println("Attempt to charge " + FIRST_AMOUNT); // Attempt some charges and a payment
         visa.charge(FIRST_AMOUNT);
 
         System.out.println("Balance: " + visa.getBalance());

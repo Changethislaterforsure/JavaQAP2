@@ -2,7 +2,7 @@ public class Money {
     private long dollars;
     private long cents;
 
-    public Money(long dollars, long cents) {
+    public Money(long dollars, long cents) { // Constructor to set dollar and cent values
         if (cents >= 100) {
             this.dollars = dollars + cents / 100;
             this.cents = cents % 100;
@@ -32,7 +32,7 @@ public class Money {
         this.cents = result % 100;
     }
 
-    public boolean equals(Money other) {
+    public boolean equals(Money other) { // Checks if two Money amounts are equal
         return this.dollars == other.dollars && this.cents == other.cents;
     }
 
